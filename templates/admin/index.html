@@ -1,0 +1,15 @@
+{%extends 'admin/master.html'%}
+{%block head_css%}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+{%endblock%}
+{%block body%}
+<div class="container">
+<div class="col-md-2"></div>
+<div class="col-md-5">
+<h1>Hello from admin</h1>
+<p>Admin you have the right to edit a member and delete them.</p>
+</div>
+<div class="col-md-4"></div>
+</div>
+{%endblock%}
